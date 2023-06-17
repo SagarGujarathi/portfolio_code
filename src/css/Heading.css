@@ -1,0 +1,58 @@
+:root {
+    --opacity: 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Cubano';
+    font-size: var(--font-l);
+    background: -webkit-linear-gradient(90deg, #EC4899, #F05252);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.background {
+    font-family: 'Cubano';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    font-size: var(--font-xl);
+    width: max-content;
+    transform: translate(-50%, -50%);
+    -webkit-text-fill-color: rgb(39, 38, 38);
+    z-index: -1;
+    color: rgb(39, 38, 38);
+}
+
+.sticker {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250%;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: var(--opacity);
+    transition-duration: 200ms;
+    animation: animate 600ms ease-in-out alternate infinite;
+}
+
+.heading:hover {
+    --opacity: 1;
+}
+
+@keyframes animate {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 43%;
+    }
+}

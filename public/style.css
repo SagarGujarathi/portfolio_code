@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Cubano';
+    src: url(./resources/Cubano.ttf);
+}
+
+@font-face {
+    font-family: 'Sofia';
+    src: url(./resources/sofiapro-light.otf);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-button {
+    background: transparent;
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F05252;
+    border-radius: 1px;
+}

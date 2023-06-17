@@ -1,0 +1,88 @@
+.project-item {
+    min-height: 300px;
+    max-width: 90vw;
+    min-width: auto;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 425px;
+    background-color: #D1D5DB;
+    border-radius: 10px;
+    background-color: #111827;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.project-item img {
+    width: 100%;
+    background-size: contain;
+}
+
+.project-name {
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Cubano';
+    padding: 0 1rem;
+}
+
+.project-info {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    color: #ADB9C8;
+    font-family: 'Sofia', sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.tech-used {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tech-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-item {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.repo-link-button {
+    padding: .4rem 1rem;
+    font-family: 'Cubano';
+    border: none;
+    cursor: pointer;
+    transition-duration: 150ms;
+}
+
+.repo-link-button:hover {
+    background-color: #A855F7;
+    color: white;
+    box-shadow: 0px 0px 5px #A855F7;
+    scale: 1.01;
+}

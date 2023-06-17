@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
+
+.home {
+    min-height: calc(100vh - 4rem);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-family: 'Poppins', Arial, sans-serif;
+    height: max-content;
+}
+
+.home-right-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.home-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-pic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    width: 80%;
+    aspect-ratio: 1/1;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+    width: 100%;
+}
+
+.intro-greet {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cubano';
+    font-size: var(--font-l-2);
+    gap: .3rem;
+    flex-wrap: wrap;
+}
+
+.intro-quote {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.fire {
+    position: relative;
+    color: #F05252;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.fire::before {
+    content: '';
+    background-image: url(../images/fire.gif);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(3rem + 100%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+
+.fire:hover::before {
+    opacity: 1 !important;
+}
+
+.download-cv-button {
+    background-color: #A855F7;
+    width: max-content;
+    padding: .7rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px #A855F7;
+    transition-duration: 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cubano';
+}
+
+.download-cv-button:hover {
+    box-shadow: 0px 0px 50px #A855F7 !important;
+    scale: 1.01;
+}
+
+@media (max-width : 1000px) {
+    .home {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content !important;
+        grid-gap: 2rem;
+        align-content: space-evenly;
+    }
+
+    .home-right-container {
+        grid-row: 1/2;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .my-pic {
+        width: 65%;
+    }
+
+    .intro-text,
+    .intro-greet,
+    .fire {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}

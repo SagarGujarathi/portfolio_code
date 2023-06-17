@@ -1,0 +1,72 @@
+.skills-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    gap: 8rem;
+}
+
+.skills-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Cubano';
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(90deg, #EC4899, #F05252);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.skills-heading::before {
+    content: 'My Skills';
+    font-family: 'Cubano';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    font-size: 7rem;
+    width: max-content;
+    transform: translate(-50%, -50%);
+    background-clip: text;
+    -webkit-text-fill-color: rgb(39, 38, 38);
+    z-index: -2;
+}
+
+.skills-heading::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/diamond.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250%;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition-duration: 200ms;
+    animation: rocketMove 600ms ease-in-out alternate infinite;
+}
+
+.skills-heading:hover::after {
+    opacity: 1;
+}
+
+@keyframes rocketMove {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 43%;
+    }
+}
+
+.skills-wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}

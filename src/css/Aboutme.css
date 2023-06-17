@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    gap: 8rem;
+}
+
+
+.about-me-content {
+    color: rgb(198, 192, 192);
+    font-family: 'Secular One', sans-serif;
+    font-size: var(--font-m);
+    word-spacing: .1rem;
+    padding: 0 1rem;
+    text-align: center;
+}
